@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.center {
+    position: absolute;
+    display: block;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-size: 18px;
+}
