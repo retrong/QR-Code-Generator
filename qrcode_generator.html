@@ -1,32 +1,28 @@
-<html>
-    <head>
-        <title>
-            QR code Genarator</title>
-            <script src="./qrcode.min.js"></script>
-            <script>
-                var qrcode = undefined;
-                function generateQRCode(value) {
-                    if (qrcode === undefined) {
-                        qrcode = new QRCode(document.getElementById('qrcode'), value);
-                    } else {
-                        qrcode.clear();
-                        qrcode.makeCode(value);
-                    }
-                }
-            </script>
-            <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
-        <div class="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code Genarator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main_center">
             <h1>QR Code Generator</h1>
             <div>
-                <label>Text:</label>
-                <input name="qrcode" type="text" onchange="generateQRCode(this.value)" placeholder="type here..." required/>
+                <label>Num:</label>
+                <input name="qrcode" type="number" min="0" max="20" onchange="generateQRCode(this.value)" placeholder="type here..." required/>
             </div>
             <br/>
-            <div>
+            <div class="main_center-qrcode">
                 <div id="qrcode"></div>
             </div>
         </div>
-    </body>
+    </div>
+    
+    <script src="./main.js"></script>
+    <script src="./qrcode.min.js"></script>
+</body>
 </html>
