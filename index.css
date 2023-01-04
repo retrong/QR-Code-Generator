@@ -1,19 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Ubuntu&display=swap');
 
-* {
-  box-sizing: border-box;
+
+html{
+    box-sizing: border-box;
 }
 
-.center {
-    position: absolute;
-    display: block;
+*,*::before,*::after {
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
+.main{
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    height: 28.5rem;
+    width: 19rem;
 }
 
-label {
-    font-size: 18px;
+.main_center{
+    padding: 1rem 1.5rem;
+    text-align: center;
 }
+
+.main_center h1{
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main_center label{
+    color: rgb(54, 69, 79);
+}
+
+.main_center div input{
+    margin-top: 1rem;
+    width: 12rem;
+    height: 2.5rem;
+    padding: 2px 5px;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+    border: none;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    border-radius: 2px;
+}
+
+.main_center div input:hover{
+    border: 2px solid rgba(149, 157, 165, 0.2);
+}
+
+.main_center-qrcode{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
